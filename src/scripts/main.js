@@ -36,7 +36,7 @@ buttons.addEventListener('click', (e) => {
     // removing the last row from the table //
 
     if (target.matches('.remove-row') && rowCount > 2) {
-      table.querySelector('tr:last-child').remove();
+      tbody.querySelector('tr:last-child').remove();
     }
 
     // check what button is clicked //
