@@ -15,7 +15,7 @@ buttons.addEventListener('click', (e) => {
 
   if (target.tagName === 'BUTTON') {
     const columnCount = table.rows[0]?.cells.length || 2;
-    const rowCount = table.rows.length;
+    const rowCount = tbody.rows.length;
 
     if (target.matches('.append-row') && rowCount < 10) {
       // appending a new row to the table //
@@ -65,7 +65,7 @@ buttons.addEventListener('click', (e) => {
   // has less than 2 ot more than 10 columns //
 
   const newColumnCount = table.rows[0]?.cells.length || 2;
-  const newRowCount = table.rows.length;
+  const newRowCount = tbody.rows.length;
 
   appendBt.disabled = newRowCount >= 10;
   removeBt.disabled = newRowCount <= 2;
